@@ -43,10 +43,10 @@ publisher:
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Captain David
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: captain@example.com
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
