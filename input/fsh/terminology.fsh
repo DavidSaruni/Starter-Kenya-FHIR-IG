@@ -1,23 +1,14 @@
-CodeSystem: CSMaritalStatus
-Id: cs-marital-status
-Title: "Marital Status"
-Description: "
-    A list of codes for marital status.
-    
-    Note: This is for demonstrable purposes only!"
-
-* ^experimental = true
-* ^status = #draft
+CodeSystem: ClientKeyPopulationStatusCodeSystem
+Id: client-key-population-status-code-system
+Title: "Client Key Population Status Code System"
+Description: "HIV Key Population"
+* ^experimental = false
 * ^caseSensitive = true
-* #Other "Other"
+* #General-Population "General Population"
 
-ValueSet: VSMaritalStatus
-Id: vs-marital-status
-Title: "Marital Status"
-Description: "
-    A list of codes for marital status.
-    
-    Note: This is for demonstrable purposes only!"
-* ^experimental = true
-* ^status = #draft
-* include codes from system CSMaritalStatus
+
+ValueSet: ClientKeyPopulationStatusValueSet
+Id: client-key-population-status-value-set
+Title: "Client Key Population Status Value Set"
+Description: "Desc for Client Key Population Status Value Set"
+* include codes from system ClientKeyPopulationStatusCodeSystem
