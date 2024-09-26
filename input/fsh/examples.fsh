@@ -19,7 +19,7 @@ Description: "Kenya Patient Example"
 * address[=].line[+] = "20157, Kabarak"
 * address[=].district = "Rongai"
 * address[=].state = "Nakuru"
-* address[=].country = "Kenya"
+* address[=].country = "KEN"
 * maritalStatus.coding.code = #M
 * maritalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
 * extension[KPS].valueCodeableConcept.coding.code = #472986005

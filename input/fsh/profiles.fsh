@@ -1,5 +1,5 @@
 Profile: KenyaPatient
-Parent: Patient
+Parent: PatientUvIps
 Id: kenya-patient
 Title: "Kenya Patient"
 Description: "Kenya Patient Profile"
@@ -10,7 +10,7 @@ Description: "Kenya Patient Profile"
   "reason(s) why this must be supported will be added"
 * name 1..*
 * name.family 1..1
-* name.given 1..1
+* name.given 1..*
 * birthDate 1..1
 * address 0..* MS
 * address.city 1..1
