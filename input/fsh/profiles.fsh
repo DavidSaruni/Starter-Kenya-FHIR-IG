@@ -5,12 +5,14 @@ Title: "Kenya Patient"
 Description: "Kenya Patient Profile"
 * maritalStatus 1..1
 * gender 1..1
-* telecom 0..*
+* telecom 0..* MS
+* telecom ^definition = 
+  "reason(s) why this must be supported will be added"
 * name 1..*
 * name.family 1..1
 * name.given 1..1
 * birthDate 1..1
-* address 0..*
+* address 0..* MS
 * address.city 1..1
 * address.line 1..1
 * address.district 1..1
@@ -24,7 +26,7 @@ Description: "Kenya Patient Profile"
 * identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     MRN 1..1 and
-    NID 0..1
+    NID 0..1 MS
 * identifier[NID].value 1..1
 * identifier[NID].system = "http://jembi.org/fhir/kenya-training-captain/identifier/nid"
 * identifier[MRN].value 1..1
